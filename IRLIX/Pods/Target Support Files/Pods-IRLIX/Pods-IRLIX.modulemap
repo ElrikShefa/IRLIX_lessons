@@ -1,0 +1,6 @@
+framework module Pods_IRLIX {
+  umbrella header "Pods-IRLIX-umbrella.h"
+
+  export *
+  module * { export * }
+}
