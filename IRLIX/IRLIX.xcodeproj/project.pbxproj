@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B93D23F22678143600231818 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B93D23F12678143600231818 /* Montserrat-SemiBold.ttf */; };
 		B9B2B5692673B0C400FDDD2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B5682673B0C400FDDD2E /* AppDelegate.swift */; };
 		B9B2B56B2673B0C400FDDD2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B56A2673B0C400FDDD2E /* SceneDelegate.swift */; };
-		B9B2B56D2673B0C400FDDD2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B56C2673B0C400FDDD2E /* ViewController.swift */; };
+		B9B2B56D2673B0C400FDDD2E /* OfficeChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B56C2673B0C400FDDD2E /* OfficeChoiceViewController.swift */; };
 		B9B2B5702673B0C400FDDD2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B2B56E2673B0C400FDDD2E /* Main.storyboard */; };
 		B9B2B5722673B0D500FDDD2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B2B5712673B0D500FDDD2E /* Assets.xcassets */; };
 		B9B2B5752673B0D500FDDD2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B2B5732673B0D500FDDD2E /* LaunchScreen.storyboard */; };
@@ -19,10 +20,11 @@
 /* Begin PBXFileReference section */
 		0B82E4C1C0EE1FEAB3969EB3 /* Pods_IRLIX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IRLIX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6750393D56CD02ECE8F5D6 /* Pods-IRLIX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRLIX.debug.xcconfig"; path = "Target Support Files/Pods-IRLIX/Pods-IRLIX.debug.xcconfig"; sourceTree = "<group>"; };
+		B93D23F12678143600231818 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		B9B2B5652673B0C400FDDD2E /* IRLIX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRLIX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B2B5682673B0C400FDDD2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9B2B56A2673B0C400FDDD2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B9B2B56C2673B0C400FDDD2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9B2B56C2673B0C400FDDD2E /* OfficeChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeChoiceViewController.swift; sourceTree = "<group>"; };
 		B9B2B56F2673B0C400FDDD2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9B2B5712673B0D500FDDD2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9B2B5742673B0D500FDDD2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,8 +58,36 @@
 				4E6750393D56CD02ECE8F5D6 /* Pods-IRLIX.debug.xcconfig */,
 				ED16030A6C2DB27204111C95 /* Pods-IRLIX.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B93D23ED26780F7D00231818 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B9B2B5682673B0C400FDDD2E /* AppDelegate.swift */,
+				B9B2B56A2673B0C400FDDD2E /* SceneDelegate.swift */,
+				B93D23EE26780FA200231818 /* Storyboards */,
+				B9B2B5712673B0D500FDDD2E /* Assets.xcassets */,
+				B9B2B5762673B0D500FDDD2E /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B93D23EE26780FA200231818 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B9B2B5732673B0D500FDDD2E /* LaunchScreen.storyboard */,
+				B9B2B56E2673B0C400FDDD2E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B93D23F02678142400231818 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B93D23F12678143600231818 /* Montserrat-SemiBold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		B9B2B55C2673B0C400FDDD2E = {
@@ -81,13 +111,9 @@
 		B9B2B5672673B0C400FDDD2E /* IRLIX */ = {
 			isa = PBXGroup;
 			children = (
-				B9B2B5682673B0C400FDDD2E /* AppDelegate.swift */,
-				B9B2B56A2673B0C400FDDD2E /* SceneDelegate.swift */,
-				B9B2B56C2673B0C400FDDD2E /* ViewController.swift */,
-				B9B2B56E2673B0C400FDDD2E /* Main.storyboard */,
-				B9B2B5712673B0D500FDDD2E /* Assets.xcassets */,
-				B9B2B5732673B0D500FDDD2E /* LaunchScreen.storyboard */,
-				B9B2B5762673B0D500FDDD2E /* Info.plist */,
+				B93D23F02678142400231818 /* Font */,
+				B9B2B56C2673B0C400FDDD2E /* OfficeChoiceViewController.swift */,
+				B93D23ED26780F7D00231818 /* Other */,
 			);
 			path = IRLIX;
 			sourceTree = "<group>";
@@ -153,6 +179,7 @@
 			files = (
 				B9B2B5752673B0D500FDDD2E /* LaunchScreen.storyboard in Resources */,
 				B9B2B5722673B0D500FDDD2E /* Assets.xcassets in Resources */,
+				B93D23F22678143600231818 /* Montserrat-SemiBold.ttf in Resources */,
 				B9B2B5702673B0C400FDDD2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9B2B56D2673B0C400FDDD2E /* ViewController.swift in Sources */,
+				B9B2B56D2673B0C400FDDD2E /* OfficeChoiceViewController.swift in Sources */,
 				B9B2B5692673B0C400FDDD2E /* AppDelegate.swift in Sources */,
 				B9B2B56B2673B0C400FDDD2E /* SceneDelegate.swift in Sources */,
 			);
@@ -357,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = IRLIX/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IRLIX/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = IRLIX/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IRLIX/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
