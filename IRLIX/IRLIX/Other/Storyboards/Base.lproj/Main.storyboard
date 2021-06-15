@@ -22,27 +22,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбор офиса" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBJ-ig-weW">
-                                <rect key="frame" x="117.5" y="97" width="179" height="42"/>
+                                <rect key="frame" x="124" y="97" width="166" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="179" id="0d1-Kb-m93"/>
                                     <constraint firstAttribute="height" constant="42" id="4ga-Ie-bGO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="23"/>
                                 <color key="textColor" red="0.098039215686274508" green="0.74901960784313726" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpJ-WF-38g">
+                                <rect key="frame" x="18.5" y="157" width="377" height="266"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.74901960779999999" blue="0.43529411759999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="377" id="h9k-9s-0D9"/>
+                                    <constraint firstAttribute="height" constant="266" id="jvU-56-Ikg"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UJ9-lV-9iD">
+                                <rect key="frame" x="18.5" y="157" width="377" height="266"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UJ9-lV-9iD" secondAttribute="height" multiplier="377:266" id="ee0-m0-TSE"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" red="0.098039215690000001" green="0.74901960779999999" blue="0.43529411759999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XAu-ei-BHH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="UJ9-lV-9iD" firstAttribute="bottom" secondItem="NpJ-WF-38g" secondAttribute="bottom" id="4Pj-Zy-sPL"/>
+                            <constraint firstItem="NpJ-WF-38g" firstAttribute="centerX" secondItem="XAu-ei-BHH" secondAttribute="centerX" id="9Yk-ko-2np"/>
                             <constraint firstItem="CBJ-ig-weW" firstAttribute="top" secondItem="rt8-Di-Mn2" secondAttribute="top" constant="97" id="9xy-88-8bg"/>
                             <constraint firstItem="CBJ-ig-weW" firstAttribute="centerX" secondItem="rt8-Di-Mn2" secondAttribute="centerX" id="PYq-sJ-WVM"/>
+                            <constraint firstItem="UJ9-lV-9iD" firstAttribute="centerX" secondItem="NpJ-WF-38g" secondAttribute="centerX" id="Rm3-1p-7dz"/>
+                            <constraint firstItem="NpJ-WF-38g" firstAttribute="top" secondItem="CBJ-ig-weW" secondAttribute="bottom" constant="18" id="YGK-LX-OPm"/>
+                            <constraint firstItem="UJ9-lV-9iD" firstAttribute="top" secondItem="NpJ-WF-38g" secondAttribute="top" id="aax-jn-vl4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="NpJ-WF-38g" id="VIA-YY-oCe"/>
+                        <outlet property="tableView" destination="UJ9-lV-9iD" id="Z2r-bb-tfZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JHq-jQ-YZK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-233" y="70"/>
+            <point key="canvasLocation" x="-233.33333333333334" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>
